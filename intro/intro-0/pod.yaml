@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: my-hello-app
+  labels:
+    app: helloapp
+spec:
+  containers:
+  - name: helloapp-container
+    image: mdennie1c/kubernetes-tutorial-intro:v0
+    imagePullPolicy: Always
